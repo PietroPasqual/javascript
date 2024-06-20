@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MercadoJa</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" href="14_Sem_Titulo_20240612180544.png" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logotipo">
+                <img src="14_Sem_Titulo_20240612180544.png" class="logotipo">
+            </div>
+        
+            <div class="cadastro">
+                <a href="cadprod.html">
+                    <button class="cadprod">Cadastrar Produto</button>
+                </a>
+            </div>
+            <div>
+                <a href="prodcad.html">
+                    <button class="prodcad">Produtos Cadastrados</button>
+                </a>
+                
+            </div>
+
+            
+            <div class="botoes">
+                <a href="login.html"><button class="login">Log out</button></a>
+            </div>
+          
+          
+
+          
+    </header>
+
+    <h1>Cadastrar Produtos</h1>
+    <form id="productForm">
+        <label for="nome">Nome do Produto:</label>
+        <input type="text" id="nome" required><br>
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" required><br>
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" required><br>
+        <label for="imagem">URL da Imagem:</label>
+        <input type="text" id="imagem" required><br>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

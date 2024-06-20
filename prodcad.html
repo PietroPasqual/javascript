@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MercadoJa</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" href="14_Sem_Titulo_20240612180544.png" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logotipo">
+                <img src="14_Sem_Titulo_20240612180544.png" class="logotipo">
+            </div>
+        
+            <div class="cadastro">
+                <a href="cadprod.html">
+                    <button class="cadprod">Cadastrar Produto</button>
+                </a>
+            </div>
+            <div>
+                <a href="prodcad.html">
+                    <button class="prodcad">Produtos Cadastrados</button>
+                </a>
+            </div>
+
+            <div class="botoes">
+                <a href="login.html"><button class="login">Log out</button></a>
+            </div>
+          
+
+
+        </div>
+    </header>
+
+    <div class="container-prodcad">
+        <h2>Produtos Cadastrados</h2>
+        <div id="produtocad"></div>
+    </div>
+
+    <div class="edit-form" id="editForm">
+        <h2>Editar Produto</h2>
+            <form id="editProductForm">
+                <input type="hidden" id="editIndex">
+                <label for="editNome">Nome:</label><br>
+                <input type="text" id="editNome" name="nome"><br><br>
+                <label for="editValor">Valor:</label><br>
+                <input type="text" id="editValor" name="valor"><br><br>
+                <label for="editDescricao">Descrição:</label><br>
+                <textarea id="editDescricao" name="descricao"></textarea><br><br>
+                <label for="editImagem">URL da Imagem:</label><br>
+                <input type="text" id="editImagem" name="imagem"><br><br>
+                <button type="submit" id="salvar">Salvar</button>
+                <button type="button" id="cancelEdit">Cancelar</button>
+            </form>
+        </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
